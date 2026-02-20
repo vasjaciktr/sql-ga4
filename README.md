@@ -15,12 +15,12 @@ COUNT(DISTINCT user_pseudo_id) AS users
 SELECT value.double_value FROM UNNEST(event_params) WHERE key='value' AS revenue
 ```
 
-№ Total Revenue
+# Total Revenue
 ```sql
 SUM(ecommerce.purchase_revenue) AS revenue
 ```
 
-#Transaction ID
+# Transaction ID
 ```sql
 SELECT value.string_value FROM UNNEST(event_params) WHERE key='transaction_id') AS transaction_id
 ```
