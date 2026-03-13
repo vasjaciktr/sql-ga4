@@ -1,5 +1,7 @@
 # GA4 eCommerce Dashboard (GA4 → BigQuery → Looker Studio)
 
+![Dashboard](dashboard/overview.png)
+
 This project demonstrates how raw **Google Analytics 4 export data in BigQuery** can be transformed into structured eCommerce analytics datasets and visualized in a **Looker Studio dashboard**.
 
 The goal of this project is to build a practical analytics layer for an eCommerce business that allows analysts and marketers to monitor revenue performance, product performance, marketing channels, and conversion funnels.
