@@ -1,4 +1,4 @@
-CREATE OR REPLACE TABLE `europafoodxb-450709.analytics_ecommerce.daily_kpis`
+CREATE OR REPLACE TABLE `xxxx-450709.analytics_ecommerce.daily_kpis`
 PARTITION BY date AS
 WITH base AS (
   SELECT
