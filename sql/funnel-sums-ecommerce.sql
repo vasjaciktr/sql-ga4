@@ -1,4 +1,4 @@
-CREATE OR REPLACE TABLE `europafoodxb-450709.analytics_ecommerce.funnel_steps` AS
+CREATE OR REPLACE TABLE `xxxx-450709.analytics_ecommerce.funnel_steps` AS
 
 SELECT
 'Product View' AS step,
