@@ -48,9 +48,13 @@ The SQL queries in this repository flatten and aggregate this data for analytics
 .
 ├── dashboard
 │   ├── overview.png
+│   ├── conversion-funnel.png.png
 │   ├── product-performance.png
-│   ├── channel-performance.png
-│   └── funnel-analysis.png
+|   ├── zero-purchase-products-with-high-traffic.png
+|   ├── lost-revenue-products.png
+|   ├── pareto-products.png
+|   ├── pareto-products-graph.png
+│   └── pareto-products-quadrant.png
 
 ├── sql
 │   ├── category_daily_ecommerce.sql
@@ -208,18 +212,33 @@ Main dashboard pages include:
 
 ![Overview](dashboard/overview.png)
 
+### Conversion Funnel
+
+![Conversion Funnel](dashboard/conversion-funnel.png)
+
 ### Product Performance
 
 ![Product Performance](dashboard/product-performance.png)
 
-### Channel Performance
+### Lost Revenue Products
 
-![Channel Performance](dashboard/channel-performance.png)
+![Product Performance](dashboard/lost-revenue-products.png)
 
-### Conversion Funnel
+### Product with high traffic but 0 purchases
 
-![Funnel](dashboard/funnel-analysis.png)
+![Product Performance](dashboard/zero-purchase-products-with-high-traffic.png)
 
+### Pareto Products Table (80% of Revenue)
+
+![Product Performance](dashboard/pareto-products.png)
+
+### Pareto Products Graph (80% of Revenue)
+
+![Product Performance](dashboard/pareto-products-graph.png)
+
+### Pareto Products Quadrant (80% of Revenue)
+
+![Product Performance](dashboard/pareto-products-quadrant.png)
 ---
 
 ## Skills Demonstrated
