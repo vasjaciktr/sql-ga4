@@ -1,4 +1,4 @@
-CREATE OR REPLACE TABLE `europafoodxb-450709.analytics_ecommerce.product_performance` AS
+CREATE OR REPLACE TABLE `xxxx-450709.analytics_ecommerce.product_performance` AS
 WITH purchases AS (
   SELECT
     (SELECT value.string_value FROM UNNEST(event_params) WHERE key = 'transaction_id') AS transaction_id,
