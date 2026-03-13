@@ -43,6 +43,13 @@ SELECT
 FROM `project.dataset.events_*`;
 
 --------------------------------------------------
+-- Revenue
+--------------------------------------------------
+SELECT value.double_value
+FROM UNNEST(event_params)
+WHERE key='value' AS revenue
+  
+--------------------------------------------------
 -- Transaction ID
 --------------------------------------------------
 SELECT
@@ -59,3 +66,29 @@ SELECT
 FROM `project.dataset.events_*`,
 UNNEST(event_params)
 WHERE key = 'page_location';
+
+--------------------------------------------------
+-- New Users (Returning Users WHEN ELSE)
+--------------------------------------------------
+SELECT 
+  value.int_value 
+FROM UNNEST(event_params)
+WHERE key='ga_session_number') = 1
+
+--------------------------------------------------
+-- Unique Buyers
+--------------------------------------------------
+COUNT(DISTINCT IF(event_name='purchase', user_pseudo_id, NULL))
+
+--------------------------------------------------
+-- New Buyers
+--------------------------------------------------
+COUNT(DISTINCT IF(event_timestamp = user_first_touch_timestamp
+                    AND event_name = 'purchase',
+                    user_pseudo_id, NULL)) AS new_buyers,
+
+--------------------------------------------------
+-- Orders/Sales/Transactions
+--------------------------------------------------
+COUNT(DISTINCT transaction_id) AS orders
+
