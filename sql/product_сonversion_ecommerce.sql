@@ -1,4 +1,4 @@
-CREATE OR REPLACE TABLE `europafoodxb-450709.analytics_ecommerce.product_conversion_daily`
+CREATE OR REPLACE TABLE `xxxx-450709.analytics_ecommerce.product_conversion_daily`
 PARTITION BY date AS
 
 WITH item_events AS (
